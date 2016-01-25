@@ -1,0 +1,361 @@
+/*MAIN CSS FILE FOR FENNER*/
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #000; }
+
+html {
+  font-size: 10px;
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+nav {
+  padding: 30px 8%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #c1c1c1;
+  background-color: #fff; }
+  nav #logo {
+    height: 25px;
+    display: blok;
+    float: left;
+    transition: fill .25s ease-in-out; }
+    nav #logo:hover {
+      fill: #f43c46; }
+  nav ul {
+    list-style-type: none;
+    float: right; }
+    nav ul li {
+      display: inline-block;
+      font-family: "Neue Helvetica W01", sans-serif;
+      font-size: 1.3em;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-right: 2em;
+      padding-top: .5em; }
+      nav ul li:last-child {
+        margin-right: 0; }
+      nav ul li a {
+        color: #000;
+        transition: color .25s ease-in-out; }
+      nav ul li a:hover {
+        color: #f43c46; }
+
+#homePage {
+  height: 100%;
+  position: relative; }
+  #homePage #top {
+    margin-top: 86px;
+    background-size: cover;
+    background-position: right top;
+    height: calc(100% - 86px);
+    position: relative;
+    background-image: url(../assets/images/introBG.png); }
+    #homePage #top #tagline {
+      margin-left: 13.5%;
+      width: 50%;
+      top: 15%;
+      position: absolute; }
+  #homePage #about {
+    padding: 150px 13.5%; }
+    #homePage #about #portrait {
+      background-image: url(../assets/images/patrick.png);
+      width: 29%;
+      padding-bottom: calc(29% - 12px);
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+      border: 6px solid #4a2e9f;
+      float: left; }
+    #homePage #about .content {
+      width: 60%;
+      float: right; }
+  #homePage #services {
+    padding: 150px 13.5% 450px;
+    background-image: url(../assets/images/servicesPanel.png);
+    background-position: center;
+    background-size: cover; }
+    #homePage #services ul {
+      padding-top: 11px;
+      padding-left: 7.6%; }
+    #homePage #services h2 {
+      color: #00cc8f !important; }
+  #homePage #testimonials {
+    padding: 100px 6.4% 200px;
+    background-color: #f43c46; }
+    #homePage #testimonials #quoteContainer {
+      width: 72.5%;
+      position: relative;
+      left: 13.75%; }
+    #homePage #testimonials #testLeft {
+      /*background-color: yellow;*/
+      margin-top: 225px;
+      position: absolute;
+      left: 8%; }
+    #homePage #testimonials #testRight {
+      margin-top: 225px;
+      position: absolute;
+      right: 8%;
+      text-align: right; }
+      #homePage #testimonials #testRight img {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg); }
+  #homePage #studies .top {
+    padding: 100px 13.5% 15px; }
+  #homePage #studies h2 {
+    color: #00cc8f; }
+  #homePage #studies .studyThumb {
+    width: 50%;
+    padding-bottom: 30%;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    transition: background-color .25s ease-in-out; }
+    #homePage #studies .studyThumb:hover {
+      background-color: #4ddbb1;
+      background-blend-mode: luminosity;
+      cursor: pointer; }
+  #homePage #studies h3 {
+    font-family: "Neue Helvetica W02", sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    position: absolute;
+    width: 20%;
+    margin-left: 15%;
+    margin-top: 13%;
+    color: #fff; }
+  #homePage #studies #cases {
+    background-color: #c1c1c1; }
+  #homePage #studies #caseCMSD {
+    background-image: url("../assets/images/thumbCMSD.png"); }
+  #homePage #studies #caseTech {
+    background-image: url("../assets/images/thumbTech.png"); }
+  #homePage #studies #caseClass {
+    background-image: url("../assets/images/thumbClass.png"); }
+  #homePage #studies #caseLighting {
+    background-image: url("../assets/images/thumbLighting.png"); }
+  #homePage #studies #caseRecording {
+    background-image: url("../assets/images/thumbRecording.png"); }
+  #homePage #contact {
+    padding: 100px 13.5% 150px;
+    display: none;
+    overflow: hidden; }
+    #homePage #contact #close {
+      position: absolute;
+      right: 1em;
+      font-size: 4em;
+      margin-top: -2em;
+      color: #c1c1c1;
+      transition: color .25s ease-in-out;
+      /*opacity: 0;*/
+      display: none; }
+      #homePage #contact #close:hover {
+        cursor: pointer;
+        color: #707070; }
+    #homePage #contact form {
+      padding-top: 20px; }
+      #homePage #contact form input, #homePage #contact form textarea {
+        background-color: #e7e7e7;
+        padding: .3em 1em .6em;
+        font-family: "ff-tisa-web-pro", serif;
+        font-size: 1.7em;
+        font-weight: 400;
+        margin-bottom: 1.5em;
+        border: 1px solid #e7e7e7;
+        transition: border .25s ease-in-out, color .25s ease-in-out; }
+        #homePage #contact form input:focus, #homePage #contact form textarea:focus {
+          border-color: #4a2e9f;
+          color: #4a2e9f; }
+        #homePage #contact form input[type="submit"], #homePage #contact form textarea[type="submit"] {
+          font-family: "Neue Helvetica W01", sans-serif;
+          background-color: #707070;
+          color: #fff;
+          padding: .5em;
+          letter-spacing: 1px;
+          transition: background-color .25s ease-in-out; }
+          #homePage #contact form input[type="submit"]:hover, #homePage #contact form textarea[type="submit"]:hover {
+            background-color: #4a2e9f;
+            cursor: pointer; }
+        #homePage #contact form input[name="need"], #homePage #contact form textarea[name="need"] {
+          height: 4em; }
+        #homePage #contact form input[name="details"], #homePage #contact form textarea[name="details"] {
+          height: 8em; }
+      #homePage #contact form textarea {
+        resize: none; }
+      #homePage #contact form .half {
+        width: 49%; }
+      #homePage #contact form .full {
+        width: 100%; }
+  #homePage h2 {
+    color: #4a2e9f;
+    font-size: 4em;
+    font-family: "Neue Helvetica W01", sans-serif;
+    font-weight: 500;
+    margin-bottom: .2em; }
+  #homePage h3 {
+    color: #1d2121;
+    font-size: 2.1em;
+    font-family: "Neue Helvetica W01", sans-serif;
+    font-weight: 400;
+    line-height: 1.6em; }
+  #homePage p {
+    font-family: "ff-tisa-web-pro", serif;
+    font-size: 2em;
+    color: #707070;
+    line-height: 1.6em;
+    margin-bottom: 2.3em; }
+  #homePage a {
+    font-family: "Neue Helvetica W01", sans-serif;
+    color: #4a2e9f;
+    font-weight: 500;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .25s ease-in-out; }
+    #homePage a:link {
+      color: #4a2e9f; }
+    #homePage a:hover {
+      color: #9e89dd; }
+  #homePage ul {
+    list-style-type: none; }
+    #homePage ul li {
+      font-family: "ff-tisa-web-pro", serif;
+      font-size: 2em;
+      color: #707070;
+      line-height: 1.6em;
+      padding-left: 1em;
+      text-indent: -1em; }
+      #homePage ul li:first-child {
+        color: #1d2121;
+        font-size: 1.6em;
+        font-family: "Neue Helvetica W01", sans-serif;
+        font-weight: 500;
+        line-height: 1.6em;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+  #homePage q {
+    font-family: "Neue Helvetica W01", sans-serif;
+    font-weight: 200;
+    font-size: 3.8em;
+    line-height: 1.3em;
+    color: #fff;
+    display: block;
+    text-align: center !important;
+    margin: 0 auto .7em; }
+    #homePage q:before, #homePage q:after {
+      content: ""; }
+    #homePage q img {
+      display: inline-block;
+      margin-bottom: 50px; }
+  #homePage cite {
+    font-family: "ff-tisa-web-pro", serif;
+    font-size: 2em;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    margin: 0 auto;
+    font-weight: 400; }
+  #homePage #contactButtonWrapper {
+    background-color: #4a2e9f;
+    padding: 110px 0 110px; }
+    #homePage #contactButtonWrapper #contactButton {
+      margin: 0 auto;
+      font-family: "Neue Helvetica W01", sans-serif;
+      font-size: 2em;
+      font-weight: 500;
+      text-align: center;
+      padding: 1em 1.3em;
+      display: table;
+      color: #fff;
+      border: 2px solid #fff;
+      transition: all .25s ease-in-out; }
+      #homePage #contactButtonWrapper #contactButton:hover {
+        /*				color: darken(mix($white, $blue, 50%), 60%);
+        				border-color: darken(mix($white, $blue, 50%), 60%);*/
+        background-color: #fff;
+        color: #4a2e9f; }
+
+#caseStudies {
+  height: 100%;
+  position: relative; }
+  #caseStudies #top {
+    margin-top: 86px;
+    background-size: cover;
+    background-position: right top;
+    height: calc(100% - 86px);
+    position: relative;
+    background-image: url(../assets/images/featureRecording.png);
+    background-color: #a3a3a3;
+    background-blend-mode: multiply; }
+    #caseStudies #top div {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+      #caseStudies #top div h1 {
+        font-family: "Neue Helvetica W01", sans-serif;
+        font-weight: 500;
+        font-size: 4em;
+        color: #fff; }
+        #caseStudies #top div h1 span {
+          display: block;
+          padding-top: 2em;
+          font-family: "ff-tisa-web-pro", serif;
+          font-weight: 300;
+          font-size: .5em;
+          color: #fff; }
+
+footer {
+  border-top: 1px solid #c1c1c1;
+  width: 100%; }
+  footer h4 {
+    font-family: "ff-tisa-web-pro", serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #c1c1c1;
+    padding: 20px 0;
+    line-height: 2.2em; }
+
+/*ADJUSTMENT CLASSES*/
+.clear {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.center {
+  text-align: center;
+  margin: 0 auto; }
+
+.oneCol {
+  width: 8%; }
+
+.threeCol {
+  width: 26.5%; }
+
+.threeHalfCol {
+  width: 31.4%; }
+
+.fourCol {
+  width: 35.6%; }
+
+.eightCol {
+  width: 72.5%; }
