@@ -71,77 +71,45 @@
 			
 			</div>
 		</article>
-		<article id="about">
-			<div id="portrait">
-				
-			</div>
-			<div class="content">
-				<h2>Headline</h2>
-				<p>This paragraph explains generally what Fenner does, how qualified they are, and what makes them distinct. Many voices; future; improving quality experience in the field social challenges catalyst. Local significant country, marginalized communities.</p>
-				<a href="#">Learn more about Fenner &rarr;</a>
+		<article id="caseMain">
+			<div class="casePull bgGreen textBlack">
+				<img class="icon" src="assets/images/micIcon.svg" alt="Microphone Icon" />
+				<h4 class="eightCol">This is an introduction to the problem needing solved. Globalization; women and children life-saving assessment expert, microloans convener fairness health involvement. Accessibility, agency combat malaria altruism global network, grantees immunize; change-makers socio-economic divide shift necessities fight against malnutrition enabler. Transform small-scale farmers achieve pursue these aspirations solutions; focus on impact United Nations momentum employment save lives.</h4>
 			</div>
 		<div class="clear"></div>
-		</article>
-		<article id="services">
-			<div class="fourCol left">
-				<h2>Headline</h2>
-				<h3>Introduce the work Fenner does. Planned giving courageous criteria forward-thinking; social good.</h3>
+		<div class="caseMulti bgGray textBlue">
+				<h2>Research</h2>
+				<h3 class="left fiveCol"><span>&ldquo;</span>This is a pull quote, rights-based social approach advocate meaningful.&rdquo;</h3>
+				<h5 class="right fiveCol">This is a subhead</h5>
+				<p class="right fiveCol">This section describes the research that went into the problem. This is about what he needed to learn about, not what he already knows. Relief UNHCR action reproductive rights free expression inclusive capitalism lifting people up humanitarian shifting landscape economic development climate change conflict resolution social entrepreneurship. Vaccine synthesize incubation eradicate efficient. Maintain making prog</p>
+				<div class="clear"></div>
 			</div>
-			
-			<ul class="right threeHalfCol">
-				<li>Business</li>
-				<li>Audio &amp; acoustics</li>
-				<li>Employee recruitment</li>
-				<li>Technology acquisition</li>
-				<li>Communications</li>
-				<li>Current systems audit</li>
-			</ul>
-			<ul class="right threeCol">
-				<li>Home</li>
-				<li>Home automation</li>
-				<li>Security</li>
-				<li>Lighting &amp; audio</li>
-			</ul>
-			
-		<div class="clear"></div>
-		</article>
-		<article id="testimonials">
-			<div id="testLeft" class="oneCol">
-				<img src="assets/images/slideArrow.png" alt="Arrow Left" />
+			<div class="caseImage" style="background-image: url('assets/images/caseImg1.png');">
 			</div>
-			<div id="testRight" class="oneCol">
-				<img src="assets/images/slideArrow.png" alt="Arrow Right" />
+		<div class="caseMulti bgGray textRed">
+				<h2>Strategy</h2>
+				<h5 class="eightCol blockCenter">This is a subhead</h5>
+				<p class="eightCol blockCenter spaceBelow">This section is an extensive description of the strategy: what Patrick is all about. It includes research syntheses, his previous knowledge that he brings to the table, and his resourceful ideas for making it work. It talks about choosing practical, budget-conscious equipment for the situation, with a funny anecdote or two.</p>
+				<div class="triIcon eightCol blockCenter spaceBelow">
+					<div class="thirdIcons left">
+						<img src="" alt="" />
+						<h6>Measure &amp; plan</h6>
+					</div>
+					<div class="thirdIcons left">
+						<img src="" alt="" />
+						<h6>Research &amp; purchase</h6>
+					</div>
+					<div class="thirdIcons left last">
+						<img src="" alt="" />
+						<h6>Install &amp; start making music!</h6>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<h5 class="eightCol blockCenter">This is a subhead</h5>
+				<p class="eightCol blockCenter">Informal economies meaningful progressive Kickstarter, healthcare life-expectancy policymakers; challenges micro-finance Ford Foundation emergency response network gun control Kony 2012. UNICEF working alongside human experience political educate; reduce child mortality, social analysis, inspire social change lasting change Jane Jacobs rural local solutions equality peaceful. Developing vulnerable population cooperation new approaches metrics clean water; partner, inspire breakthroughs Angelina Jolie strengthen democracy raise awareness cross-cultural. Contribution change rural development.</p>
+				<div class="clear"></div>
 			</div>
-			<div id="quoteContainer">
-				<q><img src="assets/images/quote.png" alt="Quote Marks"/><br/>&ldquo;Review about Fenner. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
-				<cite>&mdash;Happy Camper, CEO of Big Corp.</cite>
-			</div>
-		</article>
-		<article id="studies">
-			<div class="top">
-				<h2 class="eightCol center">Case Studies</h2>
-				<p class="eightCol center">Introduce the case studies. Forward-thinking health lasting changefairness harness informal economies. Youth mobilize, leveragewomen's rights enable indicator medicine public institutions.</p>
-			</div>
-			<div id="cases">
-			<div class="studyThumb" id="caseCMSD">
-				<h3>CMSD<br>News Bureau</h3>
-			</div>
-			<div class="studyThumb" id="caseTech">
-				<h3>Integrating<br>Tech &amp; Life</h3>
-			</div>
-			<div class="studyThumb" id="caseClass">
-				<h3>Digital Tech<br>Classroom</h3>
-			</div>
-			<div class="studyThumb" id="caseLighting">
-				<h3>Local Design<br>Studio Lighting</h3>
-			</div>
-			<div class="studyThumb" id="caseRecording">
-				<h3>Custom Recording<br>Studio</h3>
-			</div>
-			<div class="clear"></div>
-			</div>
-			
-		</article>
+
 		
 		<div id="contactButtonWrapper">
 		<a href="#" id="contactButton" class="contactClick">

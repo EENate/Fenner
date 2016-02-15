@@ -16,6 +16,7 @@ $heavy:700;
 $red: #f43c46;
 $blue: #4a2e9f;
 $green:  #00cc8f;
+$bgGray: #eeeeee;
 $lightGray: #c1c1c1;
 $medGray: #707070;
 $darkGray: #1d2121;
@@ -30,6 +31,7 @@ $oneCol: 8%;
 $threeCol: 26.5%;
 $threeHalfCol: 31.4%;
 $fourCol: 35.6%;
+$fiveCol: 49.375%;
 $eightCol: 72.5%;
 $navHeight: 86px;
 
@@ -308,103 +310,6 @@ nav
 		}
 	}
 	
-	#contact
-	{
-		padding: 100px $desktopPadding 150px;
-		display: none;
-		overflow: hidden;
-
-		&.closed
-		{
-			
-		}
-		
-
-		#close
-		{
-			position: absolute;
-			right: 1em;
-			font-size: 4em;
-			margin-top: -2em;
-			color: $lightGray;
-			transition: color .25s ease-in-out;
-			/*opacity: 0;*/
-			display: none;
-			
-			&:hover
-			{
-				cursor: pointer;
-				color: $medGray;
-			}
-		}
-
-		form
-		{
-			padding-top: 20px;
-
-			input, textarea
-			{
-				background-color: lighten($lightGray, 15%);
-				padding: .3em 1em .6em;
-				font-family: $tisa;
-				font-size: 1.7em;
-				font-weight: $regular;
-				margin-bottom: 1.5em;
-				border: 1px solid lighten($lightGray, 15%);
-				transition: border .25s ease-in-out, color .25s ease-in-out;
-				
-				&:focus
-				{
-					border-color: $blue;
-					color: $blue;
-				}
-			
-				&[type="submit"]
-				{
-					font-family: $helvetica;
-					background-color: $medGray;
-					color: $white;
-					padding: .5em;
-					letter-spacing: 1px;
-					transition: background-color .25s ease-in-out;
-					
-					&:hover
-					{
-						background-color: $blue;
-						cursor: pointer;
-					}
-				}
-				
-				&[name="need"]
-				{
-					height: 4em;	
-				}
-				
-				&[name="details"]
-				{
-					height: 8em;
-				}
-			
-			}
-			
-			
-			textarea
-			{
-				resize: none;
-			}
-			
-			.half
-			{
-				width: 49%;
-			}
-			
-			.full
-			{
-				width: 100%;
-			}
-		}
-		
-	}
 	
 	h2
 	{
@@ -520,35 +425,134 @@ nav
 		font-weight: $regular;
 	}
 	
-	#contactButtonWrapper
+		
+}
+
+#contact
 	{
-		background-color: $blue;
-		padding: 110px 0 110px;
-	
-		#contactButton
+		padding: 100px $desktopPadding 150px;
+		display: none;
+		overflow: hidden;
+
+		&.closed
 		{
-			margin: 0 auto;
-			font-family: $helvetica;
-			font-size: 2em;
-			font-weight: $medium;
-			text-align: center;
-			padding: 1em 1.3em;
-			display: table;
-			color: $white;
-			border: 2px solid $white;
-			transition: all .25s ease-in-out;
+			
+		}
+		
+
+		#close
+		{
+			position: absolute;
+			right: 1em;
+			font-size: 4em;
+			margin-top: -2em;
+			color: $lightGray;
+			transition: color .25s ease-in-out;
+			/*opacity: 0;*/
+			display: none;
 			
 			&:hover
 			{
-/*				color: darken(mix($white, $blue, 50%), 60%);
-				border-color: darken(mix($white, $blue, 50%), 60%);*/
-				background-color: $white;
-				color: $blue;
+				cursor: pointer;
+				color: $medGray;
 			}
 		}
+
+		form
+		{
+			padding-top: 20px;
+
+			input, textarea
+			{
+				background-color: lighten($lightGray, 15%);
+				padding: .3em 1em .6em;
+				font-family: $tisa;
+				font-size: 1.7em;
+				font-weight: $regular;
+				margin-bottom: 1.5em;
+				border: 1px solid lighten($lightGray, 15%);
+				transition: border .25s ease-in-out, color .25s ease-in-out;
+				
+				&:focus
+				{
+					border-color: $blue;
+					color: $blue;
+				}
+			
+				&[type="submit"]
+				{
+					font-family: $helvetica;
+					background-color: $medGray;
+					color: $white;
+					padding: .5em;
+					letter-spacing: 1px;
+					transition: background-color .25s ease-in-out;
+					
+					&:hover
+					{
+						background-color: $blue;
+						cursor: pointer;
+					}
+				}
+				
+				&[name="need"]
+				{
+					height: 4em;	
+				}
+				
+				&[name="details"]
+				{
+					height: 8em;
+				}
+			
+			}
+			
+			
+			textarea
+			{
+				resize: none;
+			}
+			
+			.half
+			{
+				width: 49%;
+			}
+			
+			.full
+			{
+				width: 100%;
+			}
+		}
+		
 	}
 	
-}
+	#contactButtonWrapper
+		{
+			background-color: $blue;
+			padding: 110px 0 110px;
+		
+			#contactButton
+			{
+				margin: 0 auto;
+				font-family: $helvetica;
+				font-size: 2em;
+				font-weight: $medium;
+				text-align: center;
+				padding: 1em 1.3em;
+				display: table;
+				color: $white;
+				border: 2px solid $white;
+				transition: all .25s ease-in-out;
+				
+				&:hover
+				{
+	/*				color: darken(mix($white, $blue, 50%), 60%);
+					border-color: darken(mix($white, $blue, 50%), 60%);*/
+					background-color: $white;
+					color: $blue;
+				}
+			}
+		}
 
 #caseStudies
 {
@@ -588,24 +592,168 @@ nav
 		}//End div
 	}//End top
 
+	.casePull
+	{
+		padding: 100px $desktopPadding 185px;
+		text-align: center;
+		
+		.icon
+		{
+			height: 67px;
+			margin-bottom: 75px;
+		}
+		
+	}//End casePull
+	
+	.caseMulti
+	{
+		padding: 100px $desktopPadding 185px;
+		text-align: center;
+		
+		&.textBlue
+		{
+			h2
+			{
+				color: $blue;
+			}
+			
+			h3
+			{
+				color: $blue;
+			}	
+			
+			h6
+			{
+				color: $blue;
+			}
+		}
+		
+		&.textRed
+		{
+			h2
+			{
+				color: $red;
+			}
+			
+			h3
+			{
+				color: $red;
+			}	
+			
+			h6
+			{
+				color: $red;
+			}
+		}
+		
+		.thirdIcons
+		{
+			text-align: center;
+			width: 28.3%;
+			margin-right: 7.55%;
+			
+			&.last
+			{
+				margin-right: 0 !important;
+			}
+		}	
+		
+		
+		
+	}//End caseMulti
 	
 	
+	.caseImage
+	{
+		height: 550px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		
+		
+	}//End caseImage
+	
+	
+	h2
+	{
+		font-size: 5em;
+		font-family: $helvetica;
+		font-weight: $bold;
+		margin-bottom: 1.8em;
+	}
+	
+	h3
+	{
+		text-align: left;
+		font-family: $helvetica;
+		font-size: 3.8em;
+		font-weight: $light;
+		line-height: 1.4em;
+		padding-right: $oneCol;
+		margin-top: 12px;
+		
+		span
+		{
+			margin-left: -.3em;
+			color: inherit;
+			
+		}
+	}
+	
+	h4
+	{
+		margin: 0 auto;
+		font-family: $helvetica;
+		font-weight: $regular;
+		font-size: 2.1em;
+		line-height: 1.7em;
+		text-align: left;
+	}
+	
+	h5
+	{
+		text-align: left;
+		font-family: $helvetica;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: $medium;
+		margin-bottom: .5em;
+		
+	}
+	
+	h6
+	{
+		font-family: $tisa;
+		font-size: 2.3em;
+		font-weight: $bold;
+	}
+	
+	p
+	{
+		text-align: left;
+		font-family: $tisa;
+		font-size: 2em;
+		color: $medGray;
+		line-height: 1.7em;
+		font-weight: $regular;
+	}
 }
 
 footer
 {
-	border-top: 1px solid $lightGray;
-	width: 100%;
+	border-top: 1px solid $lightGray !important;
+	width: 100% !important;
 	
 	h4
 	{
-		font-family: $tisa;
-		text-align: center;
-		font-size: 1.5em;
-		font-weight: $medium;
-		color: $lightGray;
-		padding: 20px 0;
-		line-height: 2.2em;
+		font-family: $tisa !important;
+		text-align: center !important;
+		font-size: 1.5em !important;
+		font-weight: $medium !important;
+		color: $lightGray !important;
+		padding: 20px 0 !important;
+		line-height: 2.2em !important;
 	}
 }
 
@@ -637,6 +785,7 @@ footer
 	width: $oneCol;
 }
 
+
 .threeCol
 {
 	width: $threeCol;
@@ -652,7 +801,32 @@ footer
 	width: $fourCol;
 }
 
+.fiveCol
+{
+	width: $fiveCol;
+}
+
 .eightCol
 {
 	width: $eightCol;
+}
+
+.bgGreen
+{
+	background-color: $green;
+}
+
+.bgGray
+{
+	background-color: $bgGray;
+}
+
+.blockCenter
+{
+	margin: 0 auto;
+}
+
+.spaceBelow
+{
+	margin-bottom: 100px;
 }
