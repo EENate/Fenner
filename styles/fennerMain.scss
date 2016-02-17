@@ -17,6 +17,7 @@ $red: #f43c46;
 $blue: #4a2e9f;
 $green:  #00cc8f;
 $bgGray: #eeeeee;
+$bgDarkGray: #dcdcdc;
 $lightGray: #c1c1c1;
 $medGray: #707070;
 $darkGray: #1d2121;
@@ -612,37 +613,43 @@ nav
 		
 		&.textBlue
 		{
-			h2
+			h2, h3, h6
 			{
 				color: $blue;
 			}
 			
-			h3
+			path
 			{
-				color: $blue;
-			}	
-			
-			h6
-			{
+				fill: $blue;
 				color: $blue;
 			}
 		}
 		
 		&.textRed
 		{
-			h2
+			h2, h3, h6
 			{
 				color: $red;
 			}
 			
-			h3
+			path
 			{
+				fill: $red;
 				color: $red;
-			}	
+			}
+		}
+		
+		&.textGreen
+		{
+			h2, h3, h6
+			{
+				color: $green;
+			}
 			
-			h6
+			path
 			{
-				color: $red;
+				fill: $green;
+				color: $green;
 			}
 		}
 		
@@ -656,7 +663,40 @@ nav
 			{
 				margin-right: 0 !important;
 			}
+			
+			svg
+			{
+				width: 60%;
+				margin-bottom: 2em;
+				vertical-align: middle;
+			}
+			
 		}	
+		
+		.halfIcons
+		{
+			width: 46.225%;
+			margin-right: 7.55%;
+			
+			&.last
+			{
+				margin-right: 0 !important;
+				
+				img
+				{
+				text-align: right;
+				}
+			}
+			
+			img, svg
+			{
+				width: 80%;
+				margin-bottom: 2em;
+				vertical-align: middle;
+				margin-top: 35px;
+				
+			}
+		}
 		
 		
 		
@@ -819,6 +859,11 @@ footer
 .bgGray
 {
 	background-color: $bgGray;
+}
+
+.bgDarkGray
+{
+	background-color: $bgDarkGray;
 }
 
 .blockCenter

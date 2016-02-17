@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="288" height="181" viewBox="0 0 288 181">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-6 {
+        stroke: #00cc8f;
+      }
+
+      .cls-1 {
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2, .cls-6 {
+        fill: #ebebeb;
+      }
+
+      .cls-3 {
+        stroke-width: 21px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #00cc8f;
+      }
+
+      .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-6 {
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect x="2.5" y="2.5" width="283" height="172" rx="5" ry="5" class="cls-1"/>
+    <g>
+      <rect x="158.5" y="167.5" width="30" height="9" class="cls-2"/>
+      <rect x="153.5" y="131.5" width="5" height="39" class="cls-3"/>
+      <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABLFBMVEUAAAAAzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AAADQK2qEAAAAYnRSTlMAFsDy5tOviWIzAxPO77FuGhDL/vy4WwjpfQ8KPj9KX4as1+1zBhJTnu7aQbuWMNQmOMnxRgL3+2UMrlaZ+ULw1ZXYPC720gRyyK3rCTG5wx5vnVT1BTZmk7VeRec1LT2+C9FKh8QAAAABYktHRACIBR1IAAAACXBIWXMAAC4jAAAuIwF4pT92AAABNUlEQVQ4y43T2VLCQBAF0Na4BZWIJCpEhCAhghJFRY0bKO4o7rhv+f+PcDqxKB80c/v51J3urh7q6VV8X+nrHxgcUmMUUcMjfrdG49rYvzAxnvR/lW5MTMoTw5pKpf+C5nRGVTMz2ZyV70bPFuyobqnozJV+aHmeost2FkKZrJgSSq4VtrC4JJNUXQ7kyqpU1rQ1lutZqSQ3HzS6IZfeZrD+LbmMbbPc2ZVLyrGsy2cnqrBsSPcpXo+z3AMivX0evQnIg0Mhj44BqfHjJwCsnQpYSgOyyheSAiCdCdg6B+AFRwLXQdQW8BKBDu/yCoA2/6NrJPJGwDYCbwW8uwdgkefuIJH8LR4QaAn4iEA+9ScEPvOtIfBFwFcEvgmoIPCdrxeBLgo/dF2vI7D5aRgWAs2E9+V9A95fWRcVbyWiAAAAAElFTkSuQmCC" x="152.5" y="131.5" width="40" height="40"/>
+    </g>
+    <g>
+      <rect x="200.5" y="13.5" width="39" height="5" class="cls-4"/>
+      <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABLFBMVEUAAAAAzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AzI8AAADQK2qEAAAAYnRSTlMAChMQFj7Oy8A//vIzSuZf04avrInXYhJT7wOesQbubvwau7gwW+kIOH0Cye0Pc/faDEGulpnU8Sb7Ri7YZfb5VsjwQjGt1bmVVJ3SPD0tNUVecgS+68MJC/VvHue1k2Y2BUr49sMAAAABYktHRACIBR1IAAAACXBIWXMAAC4jAAAuIwF4pT92AAABNElEQVQ4y63UyVICQQwG4BlQhAYdcUQQmUVAZXMZxH1BUUEFxV0U137/hyABD1LgJAdz7a/676RSrSh0qR6vZ4ThlFHfmM/PgQEpZJADQxLqX2EAHCt6HOAEB2oAJzkwDHCKA3WA0xwYATjDcFEBMMSAMXCzcQacA5hgOMMEaDGT7XkGTAJMMVwaN2KBAXHai0u0y+AQs7TL5cEVlmlo4QtXGJ2sglszSOfgOogi6eLrGFyigzfQbaqkw8WWW9tkbgndzi7ZRwKd0Ci3t4/OPiBYzjpEVz4iXOYYmaycuLPTM9F1Vdd+jVitx8S5y/yiF5em7FW9MXCqNq7S182b27AeET9Kmnf3g9d4H2zZX4/ZofvnpPqgeNKehz+s9Qu+1F7bf3bg6BX4T9/q7x+fX98u8+gAJVtYHgLXDDMAAAAASUVORK5CYII=" x="199.5" y="15.5" width="40" height="40"/>
+    </g>
+    <g>
+      <path d="M269.000,160.000 L210.000,160.000 L210.000,159.062 L210.000,140.687 L210.000,71.000 L229.656,71.000 L229.656,140.687 L269.000,140.687 L269.000,160.000 Z" class="cls-5"/>
+      <rect x="200.5" y="55.5" width="5" height="116" class="cls-4"/>
+      <rect x="200.5" y="7.5" width="5" height="11" class="cls-4"/>
+      <rect x="197.5" y="59.5" width="11" height="92" class="cls-6"/>
+    </g>
+    <g>
+      <circle cx="68.22" cy="108.015" r="49.25" class="cls-4"/>
+      <path d="M105.625,15.937 L145.781,15.937 L145.781,39.469 L105.625,39.469 L105.625,15.937 Z" class="cls-5"/>
+      <rect x="62.97" y="18.44" width="40.19" height="23.53" class="cls-4"/>
+      <rect x="18.97" y="18.44" width="40.19" height="23.53" class="cls-4"/>
+    </g>
+  </g>
+</svg>

@@ -86,21 +86,21 @@
 			</div>
 			<div class="caseImage" style="background-image: url('assets/images/caseImg1.png');">
 			</div>
-		<div class="caseMulti bgGray textRed">
+		<div class="caseMulti bgDarkGray textRed">
 				<h2>Strategy</h2>
 				<h5 class="eightCol blockCenter">This is a subhead</h5>
 				<p class="eightCol blockCenter spaceBelow">This section is an extensive description of the strategy: what Patrick is all about. It includes research syntheses, his previous knowledge that he brings to the table, and his resourceful ideas for making it work. It talks about choosing practical, budget-conscious equipment for the situation, with a funny anecdote or two.</p>
 				<div class="triIcon eightCol blockCenter spaceBelow">
 					<div class="thirdIcons left">
-						<img src="" alt="" />
+						<img class="svg" src="assets/images/triangleIcon.svg" alt="" />
 						<h6>Measure &amp; plan</h6>
 					</div>
 					<div class="thirdIcons left">
-						<img src="" alt="" />
+						<img class="svg" src="assets/images/computerIcon.svg" alt="" />
 						<h6>Research &amp; purchase</h6>
 					</div>
 					<div class="thirdIcons left last">
-						<img src="" alt="" />
+						<img class="svg" src="assets/images/drillIcon.svg" alt="" />
 						<h6>Install &amp; start making music!</h6>
 					</div>
 					<div class="clear"></div>
@@ -109,6 +109,24 @@
 				<p class="eightCol blockCenter">Informal economies meaningful progressive Kickstarter, healthcare life-expectancy policymakers; challenges micro-finance Ford Foundation emergency response network gun control Kony 2012. UNICEF working alongside human experience political educate; reduce child mortality, social analysis, inspire social change lasting change Jane Jacobs rural local solutions equality peaceful. Developing vulnerable population cooperation new approaches metrics clean water; partner, inspire breakthroughs Angelina Jolie strengthen democracy raise awareness cross-cultural. Contribution change rural development.</p>
 				<div class="clear"></div>
 			</div>
+			<div class="caseMulti bgGray textGreen">
+					<h2>Implementation</h2>
+					<div class="eightCol blockCenter">
+					<div class="halfIcons left">
+					<h5>This is a subhead</h5>
+					<p class="spaceBelow">This section is an extensive description of the strategy: what Patrick is all about. It includes research syntheses, his previous knowledge that he brings to the table, and his resourceful ideas for making it work. It talks about choosing practical, budget-conscious equipment for the situation, with a funny anecdote or two.</p>
+					</div>
+					<div class="halfIcons left last">
+						<img src="assets/images/floorplan.png" alt="" />
+					</div>
+					</div>
+					<div class="clear"></div>
+					
+					
+					<h5 class="eightCol blockCenter">This is a subhead</h5>
+					<p class="eightCol blockCenter">Informal economies meaningful progressive Kickstarter, healthcare life-expectancy policymakers; challenges micro-finance Ford Foundation emergency response network gun control Kony 2012. UNICEF working alongside human experience political educate; reduce child mortality, social analysis, inspire social change lasting change Jane Jacobs rural local solutions equality peaceful. Developing vulnerable population cooperation new approaches metrics clean water; partner, inspire breakthroughs Angelina Jolie strengthen democracy raise awareness cross-cultural. Contribution change rural development.</p>
+					<div class="clear"></div>
+				</div>
 
 		
 		<div id="contactButtonWrapper">

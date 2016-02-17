@@ -329,24 +329,43 @@ nav {
   #caseStudies .caseMulti {
     padding: 100px 13.5% 185px;
     text-align: center; }
-    #caseStudies .caseMulti.textBlue h2 {
+    #caseStudies .caseMulti.textBlue h2, #caseStudies .caseMulti.textBlue h3, #caseStudies .caseMulti.textBlue h6 {
       color: #4a2e9f; }
-    #caseStudies .caseMulti.textBlue h3 {
+    #caseStudies .caseMulti.textBlue path {
+      fill: #4a2e9f;
       color: #4a2e9f; }
-    #caseStudies .caseMulti.textBlue h6 {
-      color: #4a2e9f; }
-    #caseStudies .caseMulti.textRed h2 {
+    #caseStudies .caseMulti.textRed h2, #caseStudies .caseMulti.textRed h3, #caseStudies .caseMulti.textRed h6 {
       color: #f43c46; }
-    #caseStudies .caseMulti.textRed h3 {
+    #caseStudies .caseMulti.textRed path {
+      fill: #f43c46;
       color: #f43c46; }
-    #caseStudies .caseMulti.textRed h6 {
-      color: #f43c46; }
+    #caseStudies .caseMulti.textGreen h2, #caseStudies .caseMulti.textGreen h3, #caseStudies .caseMulti.textGreen h6 {
+      color: #00cc8f; }
+    #caseStudies .caseMulti.textGreen path {
+      fill: #00cc8f;
+      color: #00cc8f; }
     #caseStudies .caseMulti .thirdIcons {
       text-align: center;
       width: 28.3%;
       margin-right: 7.55%; }
       #caseStudies .caseMulti .thirdIcons.last {
         margin-right: 0 !important; }
+      #caseStudies .caseMulti .thirdIcons svg {
+        width: 60%;
+        margin-bottom: 2em;
+        vertical-align: middle; }
+    #caseStudies .caseMulti .halfIcons {
+      width: 46.225%;
+      margin-right: 7.55%; }
+      #caseStudies .caseMulti .halfIcons.last {
+        margin-right: 0 !important; }
+        #caseStudies .caseMulti .halfIcons.last img {
+          text-align: right; }
+      #caseStudies .caseMulti .halfIcons img, #caseStudies .caseMulti .halfIcons svg {
+        width: 80%;
+        margin-bottom: 2em;
+        vertical-align: middle;
+        margin-top: 35px; }
   #caseStudies .caseImage {
     height: 550px;
     background-repeat: no-repeat;
@@ -444,6 +463,9 @@ footer {
 
 .bgGray {
   background-color: #eeeeee; }
+
+.bgDarkGray {
+  background-color: #dcdcdc; }
 
 .blockCenter {
   margin: 0 auto; }
