@@ -611,9 +611,16 @@ nav
 		padding: 100px $desktopPadding 185px;
 		text-align: center;
 		
+		.icon
+		{
+			height: 67px;
+			margin-bottom: 75px;
+			margin-top: -50px;
+		}
+		
 		&.textBlue
 		{
-			h2, h3, h6
+			h2, h3, h6, q
 			{
 				color: $blue;
 			}
@@ -627,7 +634,7 @@ nav
 		
 		&.textRed
 		{
-			h2, h3, h6
+			h2, h3, h6, q
 			{
 				color: $red;
 			}
@@ -641,7 +648,7 @@ nav
 		
 		&.textGreen
 		{
-			h2, h3, h6
+			h2, h3, h6, q
 			{
 				color: $green;
 			}
@@ -777,7 +784,35 @@ nav
 		color: $medGray;
 		line-height: 1.7em;
 		font-weight: $regular;
+		margin-bottom: 2em;
+		
+		a
+		{
+			cursor: pointer;
+		}
 	}
+	
+	q
+	{
+		font-family: $helvetica;
+		font-size: 3.8em;
+		font-weight: $light;
+		line-height: 1.4em;
+		display: block;
+		margin-top: 80px;
+		margin-bottom: 80px;
+		
+		&::before
+		{
+			content: '\201C ';
+		}	
+		
+		&::after
+		{
+			content: '\201D ';
+		}
+	}
+	
 }
 
 footer
@@ -874,4 +909,14 @@ footer
 .spaceBelow
 {
 	margin-bottom: 100px;
+}
+
+.noSpaceAbove
+{
+	margin-top: 0 !important;
+}
+
+.tallImage
+{
+	height: 650px !important;
 }

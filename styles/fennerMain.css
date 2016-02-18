@@ -329,17 +329,21 @@ nav {
   #caseStudies .caseMulti {
     padding: 100px 13.5% 185px;
     text-align: center; }
-    #caseStudies .caseMulti.textBlue h2, #caseStudies .caseMulti.textBlue h3, #caseStudies .caseMulti.textBlue h6 {
+    #caseStudies .caseMulti .icon {
+      height: 67px;
+      margin-bottom: 75px;
+      margin-top: -50px; }
+    #caseStudies .caseMulti.textBlue h2, #caseStudies .caseMulti.textBlue h3, #caseStudies .caseMulti.textBlue h6, #caseStudies .caseMulti.textBlue q {
       color: #4a2e9f; }
     #caseStudies .caseMulti.textBlue path {
       fill: #4a2e9f;
       color: #4a2e9f; }
-    #caseStudies .caseMulti.textRed h2, #caseStudies .caseMulti.textRed h3, #caseStudies .caseMulti.textRed h6 {
+    #caseStudies .caseMulti.textRed h2, #caseStudies .caseMulti.textRed h3, #caseStudies .caseMulti.textRed h6, #caseStudies .caseMulti.textRed q {
       color: #f43c46; }
     #caseStudies .caseMulti.textRed path {
       fill: #f43c46;
       color: #f43c46; }
-    #caseStudies .caseMulti.textGreen h2, #caseStudies .caseMulti.textGreen h3, #caseStudies .caseMulti.textGreen h6 {
+    #caseStudies .caseMulti.textGreen h2, #caseStudies .caseMulti.textGreen h3, #caseStudies .caseMulti.textGreen h6, #caseStudies .caseMulti.textGreen q {
       color: #00cc8f; }
     #caseStudies .caseMulti.textGreen path {
       fill: #00cc8f;
@@ -412,7 +416,22 @@ nav {
     font-size: 2em;
     color: #707070;
     line-height: 1.7em;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 2em; }
+    #caseStudies p a {
+      cursor: pointer; }
+  #caseStudies q {
+    font-family: "Neue Helvetica W01", sans-serif;
+    font-size: 3.8em;
+    font-weight: 300;
+    line-height: 1.4em;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 80px; }
+    #caseStudies q::before {
+      content: '\201C '; }
+    #caseStudies q::after {
+      content: '\201D '; }
 
 footer {
   border-top: 1px solid #c1c1c1 !important;
@@ -472,3 +491,9 @@ footer {
 
 .spaceBelow {
   margin-bottom: 100px; }
+
+.noSpaceAbove {
+  margin-top: 0 !important; }
+
+.tallImage {
+  height: 650px !important; }

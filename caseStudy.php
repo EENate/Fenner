@@ -73,7 +73,7 @@
 		</article>
 		<article id="caseMain">
 			<div class="casePull bgGreen textBlack">
-				<img class="icon" src="assets/images/micIcon.svg" alt="Microphone Icon" />
+				<img class="icon svg" src="assets/images/micIcon.svg" alt="Microphone Icon" />
 				<h4 class="eightCol">This is an introduction to the problem needing solved. Globalization; women and children life-saving assessment expert, microloans convener fairness health involvement. Accessibility, agency combat malaria altruism global network, grantees immunize; change-makers socio-economic divide shift necessities fight against malnutrition enabler. Transform small-scale farmers achieve pursue these aspirations solutions; focus on impact United Nations momentum employment save lives.</h4>
 			</div>
 		<div class="clear"></div>
@@ -114,20 +114,44 @@
 					<div class="eightCol blockCenter">
 					<div class="halfIcons left">
 					<h5>This is a subhead</h5>
-					<p class="spaceBelow">This section is an extensive description of the strategy: what Patrick is all about. It includes research syntheses, his previous knowledge that he brings to the table, and his resourceful ideas for making it work. It talks about choosing practical, budget-conscious equipment for the situation, with a funny anecdote or two.</p>
+					<p>This section is an extensive description of the strategy: what Patrick is all about. It includes research syntheses, his previous knowledge that he brings to the table, and his resourceful ideas for making it work. It talks about choosing practical, budget-conscious equipment for the situation, with a funny anecdote or two.</p>
 					</div>
 					<div class="halfIcons left last">
 						<img src="assets/images/floorplan.png" alt="" />
 					</div>
 					</div>
 					<div class="clear"></div>
-					
-					
+					<q class="eightCol blockCenter">Think tank; pathway to a better life John Lennon compassion. Medecins du Monde non-partisan agriculture visionary better generosity storytelling.</q>
+					<p class="eightCol blockCenter">Natural resources catalytic effect our grantees and partners sustainable, democratizing the global financial system Peace Corps progress breakthrough insights plumpy'nut Nelson Mandela social innovation giving. Innovation Millennium Development Goals; promising development public sector change lives.</p>
 					<h5 class="eightCol blockCenter">This is a subhead</h5>
 					<p class="eightCol blockCenter">Informal economies meaningful progressive Kickstarter, healthcare life-expectancy policymakers; challenges micro-finance Ford Foundation emergency response network gun control Kony 2012. UNICEF working alongside human experience political educate; reduce child mortality, social analysis, inspire social change lasting change Jane Jacobs rural local solutions equality peaceful. Developing vulnerable population cooperation new approaches metrics clean water; partner, inspire breakthroughs Angelina Jolie strengthen democracy raise awareness cross-cultural. Contribution change rural development.</p>
+			
 					<div class="clear"></div>
 				</div>
-
+		<div class="caseImage tallImage" style="background-image: url('assets/images/mixing.png');">
+		</div>
+		<div class="caseMulti bgDarkGray textBlue">
+			<h2>Challenges</h2>
+			<h5 class="eightCol blockCenter">This is a subhead</h5>
+			<p class="eightCol blockCenter">Freedom resolve; safety youth implementation interconnectivity human being, aid, free-speech empower. Legal aid cornerstone open source innovate empowerment detection gender. Evolution solution accelerate progress positive social change process Gandhi equity capacity building, Andrew Carnegie carbon rights nonprofit catalyze amplify board of directors. Volunteer maximize NGO; committed; measures meaningful work justice.</p>
+		</div>
+		
+		<div class="caseMulti bgGray textRed">
+			<h2>Outcome</h2>
+			<img class="icon svg" src="assets/images/rock.svg" alt="Microphone Icon" />
+			<h5 class="eightCol blockCenter">This is a subhead</h5>
+			<p class="eightCol blockCenter">Freedom resolve; safety youth implementation interconnectivity human being, aid, free-speech empower. Legal aid cornerstone open source innovate empowerment detection gender. Evolution solution accelerate progress positive social change process Gandhi equity capacity building, Andrew Carnegie carbon rights nonprofit catalyze amplify board of directors. Volunteer maximize NGO; committed; measures meaningful work justice.</p>
+		</div>
+		<div class="caseImage tallImage" style="background-image: url('assets/images/amp.png');">
+		</div>
+		<div class="caseMulti bgGray textRed">
+			<q class="eightCol blockCenter noSpaceAbove">Stakeholders, research, theory of socialchange, world problem solving carbon emissions reductions. Tackle recognize vulnerable citizens potential.</q>
+			<p class="eightCol blockCenter">Sustainability collaborative consumption, change movements sharing economy activism sustainable future aid international development initiative democracy. Transformative policy, cause refugee microloans forward-thinking.</p>
+			<h5 class="eightCol blockCenter">This is a subhead</h5>
+			<p class="eightCol blockCenter">United Nations social impact policymakers collaborative consumption sustainability compassion. Effectiveness our ambitions; lifting people up educate, sustainable future frontline; worldwide Global South developing medical sustainable readiness poverty. Youth equal opportunity giving, resourceful breakthrough insights committed; replicable change lives evolution implementation.</p>
+			<p class="eightCol blockCenter">
+			This is a call to action. Crisis management empower long-term engage, achieve expanding community <a class="contactClick">contact Fenner.</strong></a>
+		</div>
 		
 		<div id="contactButtonWrapper">
 		<a href="#" id="contactButton" class="contactClick">
