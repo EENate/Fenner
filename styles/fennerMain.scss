@@ -203,28 +203,55 @@ nav
 	{
 		padding: 100px $desktopThinPadding 200px;
 		background-color: $red;
+		position: relative;
 		
 		#quoteContainer
 		{
 			width: $eightCol;
 			position: relative;
-			left: 13.75%;
+			overflow: hidden;
+			
+			#quoteSlider
+			{
+				transition: margin-left .25s ease-in-out;
+			}
+			
+			.quote
+			{
+				float: left;
+			}
 		}
 		
 		#testLeft
 		{
 			/*background-color: yellow;*/
-			margin-top: 225px;
+			/*margin-top: 225px;*/
+			top: 50%;
 			position: absolute;
 			left: $oneCol;
+			cursor: pointer;
+			transition: opacity .25s ease-in-out;
+			
+			&:hover
+			{
+				opacity: .7;
+			}
 		}
 		
 		#testRight
 		{
-			margin-top: 225px;
+			/*margin-top: 225px;*/
+			top: 50%;
 			position: absolute;
 			right: $oneCol;
 			text-align: right;
+			cursor: pointer;
+			transition: opacity .25s ease-in-out;
+			
+			&:hover
+			{
+				opacity: .7;
+			}
 			
 			img
 			{
@@ -398,17 +425,11 @@ nav
 		color: $white;
 		display: block;
 		text-align: center !important;
-		margin: 0 auto .7em;
+		margin: 50px auto .7em;
 		
 		&:before, &:after
 		{
 			content: "";
-		}
-		
-		img
-		{
-			display: inline-block;
-			margin-bottom: 50px;
 		}
 		
 		
@@ -562,7 +583,6 @@ nav
 	#top
 	{
 		@include topPanel;
-		background-image: url(../assets/images/featureRecording.png);
 		background-color: lighten($medGray, 20%);
 		background-blend-mode: multiply;
 		
@@ -591,6 +611,11 @@ nav
 				}//End Span
 			}//End h1
 		}//End div
+		
+
+		
+		
+		
 	}//End top
 
 	.casePull
@@ -616,48 +641,6 @@ nav
 			height: 67px;
 			margin-bottom: 75px;
 			margin-top: -50px;
-		}
-		
-		&.textBlue
-		{
-			h2, h3, h6, q
-			{
-				color: $blue;
-			}
-			
-			path
-			{
-				fill: $blue;
-				color: $blue;
-			}
-		}
-		
-		&.textRed
-		{
-			h2, h3, h6, q
-			{
-				color: $red;
-			}
-			
-			path
-			{
-				fill: $red;
-				color: $red;
-			}
-		}
-		
-		&.textGreen
-		{
-			h2, h3, h6, q
-			{
-				color: $green;
-			}
-			
-			path
-			{
-				fill: $green;
-				color: $green;
-			}
 		}
 		
 		.thirdIcons
@@ -720,6 +703,31 @@ nav
 		
 	}//End caseImage
 	
+	
+	.caseBottom
+	{
+		height: 100px;
+		
+		.prevCase, .nextCase
+		{
+			margin-top: 0	;
+		}
+	}
+	
+	.prevCase, .nextCase
+	{
+		display: block;
+		font-family: $helvetica;
+		font-size: 1.8em;
+		color: $white;
+		margin: -3em 5em;
+		
+		&:hover
+		{
+			opacity: .8;
+			cursor: pointer;
+		}
+	}
 	
 	h2
 	{
@@ -810,6 +818,48 @@ nav
 		&::after
 		{
 			content: '\201D ';
+		}
+	}
+	
+	.textBlue
+	{
+		h2, h3, h6, q, span
+		{
+			color: $blue !important;
+		}
+		
+		path
+		{
+			fill: $blue;
+			color: $blue;
+		}
+	}
+	
+	.textRed
+	{
+		h2, h3, h6, q, span
+		{
+			color: $red !important;
+		}
+		
+		path
+		{
+			fill: $red;
+			color: $red;
+		}
+	}
+	
+	.textGreen
+	{
+		h2, h3, h6, q, span
+		{
+			color: $green !important;
+		}
+		
+		path
+		{
+			fill: $green;
+			color: $green;
 		}
 	}
 	
@@ -904,6 +954,7 @@ footer
 .blockCenter
 {
 	margin: 0 auto;
+	display: block;
 }
 
 .spaceBelow

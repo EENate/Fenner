@@ -92,21 +92,36 @@ nav {
       color: #00cc8f !important; }
   #homePage #testimonials {
     padding: 100px 6.4% 200px;
-    background-color: #f43c46; }
+    background-color: #f43c46;
+    position: relative; }
     #homePage #testimonials #quoteContainer {
       width: 72.5%;
       position: relative;
-      left: 13.75%; }
+      overflow: hidden; }
+      #homePage #testimonials #quoteContainer #quoteSlider {
+        transition: margin-left .25s ease-in-out; }
+      #homePage #testimonials #quoteContainer .quote {
+        float: left; }
     #homePage #testimonials #testLeft {
       /*background-color: yellow;*/
-      margin-top: 225px;
+      /*margin-top: 225px;*/
+      top: 50%;
       position: absolute;
-      left: 8%; }
+      left: 8%;
+      cursor: pointer;
+      transition: opacity .25s ease-in-out; }
+      #homePage #testimonials #testLeft:hover {
+        opacity: .7; }
     #homePage #testimonials #testRight {
-      margin-top: 225px;
+      /*margin-top: 225px;*/
+      top: 50%;
       position: absolute;
       right: 8%;
-      text-align: right; }
+      text-align: right;
+      cursor: pointer;
+      transition: opacity .25s ease-in-out; }
+      #homePage #testimonials #testRight:hover {
+        opacity: .7; }
       #homePage #testimonials #testRight img {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg); }
@@ -204,12 +219,9 @@ nav {
     color: #fff;
     display: block;
     text-align: center !important;
-    margin: 0 auto .7em; }
+    margin: 50px auto .7em; }
     #homePage q:before, #homePage q:after {
       content: ""; }
-    #homePage q img {
-      display: inline-block;
-      margin-bottom: 50px; }
   #homePage cite {
     font-family: "ff-tisa-web-pro", serif;
     font-size: 2em;
@@ -300,7 +312,6 @@ nav {
     background-position: right top;
     height: calc(100% - 86px);
     position: relative;
-    background-image: url(../assets/images/featureRecording.png);
     background-color: #a3a3a3;
     background-blend-mode: multiply; }
     #caseStudies #top div {
@@ -333,21 +344,6 @@ nav {
       height: 67px;
       margin-bottom: 75px;
       margin-top: -50px; }
-    #caseStudies .caseMulti.textBlue h2, #caseStudies .caseMulti.textBlue h3, #caseStudies .caseMulti.textBlue h6, #caseStudies .caseMulti.textBlue q {
-      color: #4a2e9f; }
-    #caseStudies .caseMulti.textBlue path {
-      fill: #4a2e9f;
-      color: #4a2e9f; }
-    #caseStudies .caseMulti.textRed h2, #caseStudies .caseMulti.textRed h3, #caseStudies .caseMulti.textRed h6, #caseStudies .caseMulti.textRed q {
-      color: #f43c46; }
-    #caseStudies .caseMulti.textRed path {
-      fill: #f43c46;
-      color: #f43c46; }
-    #caseStudies .caseMulti.textGreen h2, #caseStudies .caseMulti.textGreen h3, #caseStudies .caseMulti.textGreen h6, #caseStudies .caseMulti.textGreen q {
-      color: #00cc8f; }
-    #caseStudies .caseMulti.textGreen path {
-      fill: #00cc8f;
-      color: #00cc8f; }
     #caseStudies .caseMulti .thirdIcons {
       text-align: center;
       width: 28.3%;
@@ -375,6 +371,19 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
+  #caseStudies .caseBottom {
+    height: 100px; }
+    #caseStudies .caseBottom .prevCase, #caseStudies .caseBottom .nextCase {
+      margin-top: 0; }
+  #caseStudies .prevCase, #caseStudies .nextCase {
+    display: block;
+    font-family: "Neue Helvetica W01", sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    margin: -3em 5em; }
+    #caseStudies .prevCase:hover, #caseStudies .nextCase:hover {
+      opacity: .8;
+      cursor: pointer; }
   #caseStudies h2 {
     font-size: 5em;
     font-family: "Neue Helvetica W01", sans-serif;
@@ -432,6 +441,21 @@ nav {
       content: '\201C '; }
     #caseStudies q::after {
       content: '\201D '; }
+  #caseStudies .textBlue h2, #caseStudies .textBlue h3, #caseStudies .textBlue h6, #caseStudies .textBlue q, #caseStudies .textBlue span {
+    color: #4a2e9f !important; }
+  #caseStudies .textBlue path {
+    fill: #4a2e9f;
+    color: #4a2e9f; }
+  #caseStudies .textRed h2, #caseStudies .textRed h3, #caseStudies .textRed h6, #caseStudies .textRed q, #caseStudies .textRed span {
+    color: #f43c46 !important; }
+  #caseStudies .textRed path {
+    fill: #f43c46;
+    color: #f43c46; }
+  #caseStudies .textGreen h2, #caseStudies .textGreen h3, #caseStudies .textGreen h6, #caseStudies .textGreen q, #caseStudies .textGreen span {
+    color: #00cc8f !important; }
+  #caseStudies .textGreen path {
+    fill: #00cc8f;
+    color: #00cc8f; }
 
 footer {
   border-top: 1px solid #c1c1c1 !important;
@@ -487,7 +511,8 @@ footer {
   background-color: #dcdcdc; }
 
 .blockCenter {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: block; }
 
 .spaceBelow {
   margin-bottom: 100px; }

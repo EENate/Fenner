@@ -159,7 +159,7 @@
 			<div class="content">
 				<h2>Headline</h2>
 				<p>This paragraph explains generally what Fenner does, how qualified they are, and what makes them distinct. Many voices; future; improving quality experience in the field social challenges catalyst. Local significant country, marginalized communities.</p>
-				<a href="#">Learn more about Fenner &rarr;</a>
+				<a href="#">Connect with me on LinkedIn &rarr;</a>
 			</div>
 		<div class="clear"></div>
 		</article>
@@ -193,9 +193,19 @@
 			<div id="testRight" class="oneCol">
 				<img src="assets/images/slideArrow.png" alt="Arrow Right" />
 			</div>
-			<div id="quoteContainer">
-				<q><img src="assets/images/quote.png" alt="Quote Marks"/><br/>&ldquo;Review about Fenner. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
-				<cite>&mdash;Happy Camper, CEO of Big Corp.</cite>
+			<div id="quoteContainer" class="eightCol blockCenter">
+				<img src="assets/images/quote.png" class="blockCenter" alt="Quote Marks"/>
+				<div id="quoteSlider">
+					<div class="quote">
+					<q>&ldquo;Review about Fenner. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
+					<cite>&mdash;Happy Camper, CEO of Big Corp.</cite>
+					</div>
+					<div class="quote">
+					<q>&ldquo;Review about Fenner. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
+					<cite>&mdash;Happy Camper, CEO of Big Corp.</cite>
+					</div>
+				</div>
+				<div class="clear"></div>
 			</div>
 		</article>
 		<article id="studies">
@@ -204,7 +214,36 @@
 				<p class="eightCol center">Introduce the case studies. Forward-thinking health lasting changefairness harness informal economies. Youth mobilize, leveragewomen's rights enable indicator medicine public institutions.</p>
 			</div>
 			<div id="cases">
-			<div class="studyThumb" id="caseCMSD">
+			<?php
+			include "scripts/php/connect.php";
+			$query = "SELECT * FROM caseMain ORDER BY id DESC";
+			$result = mysql_query($query);
+			
+			
+			while($cases = mysql_fetch_array($result))
+			{
+			
+			//BEGIN PROJECT QUERY
+			$id = $cases[0];
+			$name = html_entity_decode($cases[1]);
+			$thumb = $cases[2];
+			$slug = $cases[3];
+			
+			$html = '<div class="studyThumb" data-slug="';
+					$html .= $slug;
+					$html .= '" style="background-image:url(\'assets/images/';
+					$html .= $thumb;
+					$html .='\')"><h3>';
+					$html .= $name;
+					$html .='</h3></div>';
+			echo $html;
+			
+			}
+			?>
+			
+			
+			<!--STATIC CASE STUDY THUMBNAILS FOR FE DEV-->
+			<!--<div class="studyThumb" id="caseCMSD">
 				<h3>CMSD<br>News Bureau</h3>
 			</div>
 			<div class="studyThumb" id="caseTech">
@@ -218,7 +257,7 @@
 			</div>
 			<div class="studyThumb" id="caseRecording">
 				<h3>Custom Recording<br>Studio</h3>
-			</div>
+			</div>-->
 			<div class="clear"></div>
 			</div>
 			

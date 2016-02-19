@@ -65,11 +65,117 @@
 		</ul>
 	</nav>
 	<section id="caseStudies">
-		<article id="top">
+	
+	<?php
+	include "scripts/php/connect.php";
+	$thisCase = $_GET['case'];
+	$query = "SELECT * FROM caseMain WHERE caseSlug = \"$thisCase\"";
+	$result = mysql_query($query);
+	$currentCase = mysql_fetch_array($result);
+	//BEGIN PROJECT QUERY
+	$id = $currentCase[0];
+	$caseName = $currentCase[1];
+	
+	$nextId = $id + 1;
+	$prevId = $id - 1;
+	
+	//FIND THE MAX ID
+	$query = "SELECT * FROM caseMain";
+	$result = mysql_query($query);
+	$totalCases = mysql_num_rows($result);
+	
+	if ($nextId > $totalCases) {
+		$query = "SELECT * FROM caseMain ORDER BY id ASC LIMIT 1";
+		$result = mysql_query($query);
+		$caseNext = mysql_fetch_array($result);
+		$caseIdNext = $caseNext[0];
+		$caseNameNext = $caseNext[1];
+		$caseSlugNext = $caseNext[3];
+	}
+	else {
+		$query = "SELECT * FROM caseMain WHERE id = \"$nextId\"";
+		$result = mysql_query($query);
+		$caseNext = mysql_fetch_array($result);
+		$caseIdNext = $caseNext[0];
+		$caseNameNext = $caseNext[1];
+		$caseSlugNext = $caseNext[3];
+	}
+	
+	if ($prevId < 1) {
+		$query = "SELECT * FROM caseMain WHERE id = \"$totalCases\"";
+		$result = mysql_query($query);
+		$casePrev = mysql_fetch_array($result);
+		$caseIdPrev = $casePrev[0];
+		$caseNamePrev = $casePrev[1];
+		$caseSlugPrev = $casePrev[3];	
+	}
+	else {
+		$query = "SELECT * FROM caseMain WHERE id = \"$prevId\"";
+		$result = mysql_query($query);
+		$casePrev = mysql_fetch_array($result);
+		$caseIdPrev = $casePrev[0];
+		$caseNamePrev = $casePrev[1];	
+		$caseSlugPrev = $casePrev[3];	
+	}
+	
+	
+	$query = "SELECT * FROM caseContent WHERE caseNumber = \"$id\"";
+	$result = mysql_query($query);
+	$caseContent = mysql_fetch_array($result);
+
+	$caseCode = $caseContent[2];
+	$caseTopImg = $caseContent[3];
+	$caseServices = $caseContent[4];
+	
+	$caseServices = str_ireplace(", ", "&ensp;&middot;&ensp;", $caseServices);
+	
+	$html='<article id="top" style="background-image:url(\'assets/images/';
+			$html .= $caseTopImg;
+			$html .='\')">
+				<div>
+				<h1>';
+			$html .= $caseName;
+			$html .= '<span>';
+			$html .= $caseServices;
+			$html .='</span></h1>
+					</div>
+					<span data-slug="';
+			$html .=$caseSlugPrev;		
+			$html .='" class="prevCase left">&larr; ';
+			$html .=$caseNamePrev;
+			$html .='</span>
+					<span data-slug="';
+			$html .=$caseSlugNext;		
+			$html .='" class="nextCase right">';
+			$html .=$caseNameNext;
+			$html .=' &rarr;</span>
+					</article>';
+	
+	$html .= $caseCode;
+	$html .='<div class="caseBottom bgGray textRed">
+		<span data-slug="';
+		$html .=$caseSlugPrev;		
+		$html .='" class="prevCase left">&larr; ';
+		$html .=$caseNamePrev;
+		$html .='</span>
+				<span data-slug="';
+		$html .=$caseSlugNext;		
+		$html .='" class="nextCase right">';
+		$html .=$caseNameNext;
+		$html .=' &rarr;</span></div>';
+	echo $html;
+	
+	?>
+	
+	
+	<!--STATIC CASE STUDY FOR FE DEV-->
+		<!--<article id="top">
 			<div>
 				<h1>Custom Recording Studio<span>Audio &middot; Lighting &middot; Equipment</span></h1>
 			
 			</div>
+			<span class="prevCase left">&larr; Previous Case Study</span>
+			<span class="nextCase right">Next Case Study &rarr;</span>
 		</article>
 		<article id="caseMain">
 			<div class="casePull bgGreen textBlack">
@@ -151,7 +257,13 @@
 			<p class="eightCol blockCenter">United Nations social impact policymakers collaborative consumption sustainability compassion. Effectiveness our ambitions; lifting people up educate, sustainable future frontline; worldwide Global South developing medical sustainable readiness poverty. Youth equal opportunity giving, resourceful breakthrough insights committed; replicable change lives evolution implementation.</p>
 			<p class="eightCol blockCenter">
 			This is a call to action. Crisis management empower long-term engage, achieve expanding community <a class="contactClick">contact Fenner.</strong></a>
+			<div class="clear"></div>
 		</div>
+		<div class="caseBottom bgGray textRed">
+			<span class="prevCase left">&larr; Previous Case Study</span>
+			<span class="nextCase right">Next Case Study &rarr;</span>
+		
+		</div>-->
 		
 		<div id="contactButtonWrapper">
 		<a href="#" id="contactButton" class="contactClick">

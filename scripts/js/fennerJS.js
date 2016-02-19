@@ -19,7 +19,12 @@ $(document).ready(function() {
 	
 	
 	//CASE STUDY LINK
-	$(".studyThumb").click(function(){window.open("caseStudy.php","_self")})
+	$(".studyThumb, .prevCase, .nextCase").click(function()
+	{
+		var caseSlug = $(this).attr("data-slug");
+		var newURL = "caseStudy.php?case=" + caseSlug;
+		window.open(newURL,"_self")
+	});
 	
 	
  //Replace all SVG images with inline SVG
@@ -51,6 +56,46 @@ $(document).ready(function() {
         }, 'xml');
 
     });
+    
+    //QUOTE SLIDER FUNCTIONALITY
+    var quoteCount = $("#quoteSlider").children().length;
+    	
+    	//CALC THE SLIDER WIDTH AS %
+    	var sliderWidth = quoteCount * 100;
+    	sliderWidth = sliderWidth + "%";
+    	
+    	//CALC THE QUOTE WIDTHS AS %
+    	var quoteWidth = 100 / quoteCount;
+    	quoteWidth = quoteWidth + "%";
+    	
+    	//MAKE THE SLIDER THE RIGHT WIDTH
+    	$("#quoteSlider").css("width", sliderWidth);
+    	$("#quoteSlider div").css("width", quoteWidth);
+    	$("#quoteSlider").css("margin-left", 0);
+
+
+
+		//SLIDE TO THE RIGHT
+		var quoteRight = function () {
+			var currentQuote = $("#quoteSlider").css("margin-left");
+			currentQuote = parseInt(currentQuote, 10);
+			
+			
+			//SEE IF WE'RE STILL AT THE FIRST QUOTE
+			if (currentQuote == 0) {
+				quotePos = 1;
+				newPos = quotePos * -100;			
+				newPos = newPos + "%";
+				}
+				
+				$("#quoteSlider").css("margin-left", newPos);
+			}
+			
+		//PORTFOLIO RIGHT ARROW NAVIGATION
+		$("#testRight").click(function() {
+			quoteRight();
+		});
+			
 
 	//INDICATOR GENERATION
 	var portCount = $(".port").length;
@@ -72,7 +117,10 @@ $(document).ready(function() {
 	itemWidth = itemWidth + "%";
 	$("#projectSlider").css("width", sliderWidth);
 	$("#projectSlider div").css("width", itemWidth);
-	
+	$("#projectSlider").css("margin-left", 0);
+
+
+
 	
 	var portfolioRight = function() {
 	
