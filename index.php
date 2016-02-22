@@ -197,11 +197,15 @@
 				<img src="assets/images/quote.png" class="blockCenter" alt="Quote Marks"/>
 				<div id="quoteSlider">
 					<div class="quote">
-					<q>&ldquo;Review about Fenner. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
+					<q>&ldquo;One. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
 					<cite>&mdash;Happy Camper, CEO of Big Corp.</cite>
 					</div>
 					<div class="quote">
-					<q>&ldquo;Review about Fenner. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
+					<q>&ldquo;Two. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
+					<cite>&mdash;Happy Camper, CEO of Big Corp.</cite>
+					</div>
+					<div class="quote">
+					<q>&ldquo;Three. Prosperity partnership participatory monitor; vaccine effect social movement protect, extraordinary change honor readiness activist community health.&rdquo;</q>
 					<cite>&mdash;Happy Camper, CEO of Big Corp.</cite>
 					</div>
 				</div>

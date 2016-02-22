@@ -60,6 +60,11 @@ $(document).ready(function() {
     //QUOTE SLIDER FUNCTIONALITY
     var quoteCount = $("#quoteSlider").children().length;
     	
+    	//DUPLICATE THE FIRST QUOTE FOR INFINITE LOOPING
+//    	var lastQuote = $("#quoteSlider div:first-child").html();
+//    	$("#quoteSlider").append('<div class="quote">' + lastQuote + '</div>');
+//    	quoteCount = quoteCount + 1;
+    	
     	//CALC THE SLIDER WIDTH AS %
     	var sliderWidth = quoteCount * 100;
     	sliderWidth = sliderWidth + "%";
@@ -73,29 +78,146 @@ $(document).ready(function() {
     	$("#quoteSlider div").css("width", quoteWidth);
     	$("#quoteSlider").css("margin-left", 0);
 
+		//TURN OFF THE LEFT ARROW SINCE WE'RE STARTING AT THE BEGINNING
+		$("#testLeft").css("display", "none");
 
+		//SET TIMINGS
+		var transitionDuration = ".25s";
+		var transitionMill = "250";
 
 		//SLIDE TO THE RIGHT
 		var quoteRight = function () {
+		
+			$("#quoteSlider").css("transition-duration", transitionDuration);
+		
+		
+			// FIND OUT IF THE SLIDER IS MOVED AND ROUND THAT TO THE NEAREST PIXEL
 			var currentQuote = $("#quoteSlider").css("margin-left");
 			currentQuote = parseInt(currentQuote, 10);
+			currentQuote = Math.round(currentQuote);
 			
+			// FIND OUT HOW WIDE EACH SLIDE IS AND ROUND THAT TO THE NEAREST PIXEL
+			currentWidth = $("#quoteSlider div").css("width");
+			currentWidth = parseInt(currentWidth, 10);
+			currentWidth = Math.round(currentWidth);
+			
+			// DIVIDE THE CURRENT SLIDER POSITION BY THE WIDTH TO FIND OUT WHAT SLIDE WE ARE CURRENTLY LOOKING AT
+			currentQuote = (-currentQuote) / currentWidth;
+			currentQuote = Math.round(currentQuote);
 			
 			//SEE IF WE'RE STILL AT THE FIRST QUOTE
 			if (currentQuote == 0) {
 				quotePos = 1;
 				newPos = quotePos * -100;			
+				newPos = Math.round(newPos);			
 				newPos = newPos + "%";
+				}
+			// IF WE'RE NOT ON THE FIRST QUOTE, UPDATE THE QUOTE POSITION AND MOVE THERE AS A PERCENTAGE
+			else if(currentQuote < (quoteCount -1)) {
+				quotePos = currentQuote + 1;
+				newPos = quotePos * -100;
+				newPos = Math.round(newPos);			
+				newPos = newPos + "%";
+				}
+			// IF WE'RE AT THE END OF THE SLIDER, GO BACK TO THE BEGINNING
+			else {
+				quotePos = currentQuote + 1;
+				newPos = 0;
+//				quotePos = currentQuote + 1;
+//				newPos = quotePos * -100;
+//				newPos = Math.round(newPos);			
+//				newPos = newPos + "%";
+//				$("#quoteSlider").css("margin-left", newPos);
+//				setTimeout(slideReset, transitionMill);
+//				
+//				function slideReset(){
+//					$("#quoteSlider").css("transition-duration", "0s");
+//					$("#quoteSlider").css("margin-left", "0");
+//				}
+//				$("#quoteSlider").css("transition-duration", transitionDuration);
+//				
+//				return;
+
+			}
+				if (quotePos == (quoteCount - 1)) {
+					$("#testRight").css("display", "none");
+				}
+				else {
+					$("#testRight").css("display", "block");
+				}
+				
+				if (quotePos == 0) {
+					$("#testLeft").css("display", "none");
+				}
+				else {
+					$("#testLeft").css("display", "block");
 				}
 				
 				$("#quoteSlider").css("margin-left", newPos);
 			}
 			
-		//PORTFOLIO RIGHT ARROW NAVIGATION
+			var quoteLeft = function () {
+			
+				$("#quoteSlider").css("transition-duration", transitionDuration);
+			
+			
+				// FIND OUT IF THE SLIDER IS MOVED AND ROUND THAT TO THE NEAREST PIXEL
+				var currentQuote = $("#quoteSlider").css("margin-left");
+				currentQuote = parseInt(currentQuote, 10);
+				currentQuote = Math.round(currentQuote);
+				
+				// FIND OUT HOW WIDE EACH SLIDE IS AND ROUND THAT TO THE NEAREST PIXEL
+				currentWidth = $("#quoteSlider div").css("width");
+				currentWidth = parseInt(currentWidth, 10);
+				currentWidth = Math.round(currentWidth);
+				
+				// DIVIDE THE CURRENT SLIDER POSITION BY THE WIDTH TO FIND OUT WHAT SLIDE WE ARE CURRENTLY LOOKING AT
+				currentQuote = (-currentQuote) / currentWidth;
+				currentQuote = Math.round(currentQuote);
+				
+				//SEE IF WE'RE STILL AT THE FIRST QUOTE
+				if (currentQuote == 0) {
+					quotePos = quoteCount - 1;
+					newPos = quotePos * -100;			
+					newPos = Math.round(newPos);			
+					newPos = newPos + "%";
+					}
+				// IF WE'RE NOT ON THE FIRST QUOTE, UPDATE THE QUOTE POSITION AND MOVE THERE AS A PERCENTAGE
+				else if(currentQuote > 0) {
+					quotePos = currentQuote -1;
+					newPos = quotePos * -100;
+					newPos = Math.round(newPos);			
+					newPos = newPos + "%";
+					}
+					
+					if (quotePos == (quoteCount - 1)) {
+						$("#testRight").css("display", "none");
+					}
+					else {
+						$("#testRight").css("display", "block");
+					}
+					
+					if (quotePos == 0) {
+						$("#testLeft").css("display", "none");
+					}
+					else {
+						$("#testLeft").css("display", "block");
+					}
+					
+					$("#quoteSlider").css("margin-left", newPos);
+				}
+			
+			
+			
+		//PORTFOLIO ARROW NAVIGATION
 		$("#testRight").click(function() {
 			quoteRight();
 		});
-			
+		
+		//PORTFOLIO ARROW NAVIGATION
+		$("#testLeft").click(function() {
+			quoteLeft();
+		});	
 
 	//INDICATOR GENERATION
 	var portCount = $(".port").length;
